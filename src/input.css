@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Container {
+  font-family: "Manrope", sans-serif;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-inline: 24px;
+}
+
+@media (min-width: 768px) {
+  .Container {
+    padding-inline: 39px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Container {
+    max-width: 1110px;
+    padding-inline: 0;
+  }
+}
+
+.real-nova {
+  font-family: "Ibarra Real Nova", serif;
+}
+
+.sans-sarif {
+  font-family: "Public Sans", sans-serif;
+}
+
+@media (max-width: 760px) {
+  .nav {
+    position: fixed;
+    top: 70px;
+    right: 0;
+    z-index: 100;
+    width: 0;
+    display: none;
+  }
+  .nav-list {
+    display: inline-block;
+    width: 100%;
+    padding-left: 32px;
+    margin-top: 118px;
+  }
+
+  .nav-checkbox:checked ~ .nav {
+    display: block;
+    width: 70%;
+    background-color: #33323d;
+  }
+
+  .nav-icon {
+    position: relative;
+    margin-top: 15px;
+  }
+
+  .nav-item {
+    margin-bottom: 32px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+  }
+  .nav-btn {
+    z-index: 200;
+    position: fixed;
+    right: 24px;
+    top: 41px;
+    cursor: pointer;
+  }
+  .nav-checkbox:checked + label .open {
+    display: none;
+  }
+
+  .nav-checkbox:checked + label .close {
+    display: inline-block;
+  }
+}
