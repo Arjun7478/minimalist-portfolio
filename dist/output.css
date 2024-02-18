@@ -661,15 +661,17 @@ video {
   }
 
   .nav-list {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     width: 100%;
-    padding-left: 32px;
-    margin-top: 118px;
+    padding: 40px;
   }
 
   .nav-checkbox:checked ~ .nav {
     display: block;
-    width: 70%;
+    width: 223px;
+    height: 186px;
     background-color: #33323d;
   }
 
@@ -679,10 +681,10 @@ video {
   }
 
   .nav-item {
-    margin-bottom: 32px;
-    font-size: 20px;
+    font-size: 12px;
     cursor: pointer;
     color: white;
+    text-align: center;
   }
 
   .nav-btn {
