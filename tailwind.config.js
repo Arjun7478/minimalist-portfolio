@@ -4,12 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "Slightly-Desaturated-Cyan": "#5FB4A2",
-        "Dark-Blue": "#203A4C",
-        "Grayish-Dark-Blue": "#33323D",
-        "Very-Light-Grey": "#FAFAFA",
-        "Light-Grey": " #EAEAEB",
-        "Bright Red": " #F43030",
+        "slightly-sesaturated-cyan": "#5FB4A2",
+        "dark-blue": "#203A4C",
+        "grayish-dark-blue": "#33323D",
+        "very-light-grey": "#FAFAFA",
+        "light-grey": " #EAEAEB",
+        "bright red": " #F43030",
       },
     },
   },

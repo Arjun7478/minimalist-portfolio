@@ -14,17 +14,17 @@
     <title>Frontend Mentor | Minimalist Portfolio</title>
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
-  <body>
-    <main class="main bg-Very-Light-Grey">
+  <body class="bg-very-light-grey">
+    <main class="main">
       <header class="Container relative flex justify-between items-center mt-8 md:mt-16 md:mb-[52px]">
         <a href="#"><img src="images/logo.svg" alt="#" /></a>
         <input type="checkbox" id="navi-toggle" class="nav-checkbox hidden h-0 w-0" />
-        <label for="navi-toggle" class="nav-btn md:hidden relative">
+        <label for="navi-toggle" class="nav-btn md:hidden">
           <img class="open" src="images/icons/hamburger.svg" alt="#" />
-          <img class="close hidden" src="images/icons/close.svg" alt="#" />
+          <img class="close hidden absolute top-[7px] right-[27px]" src="images/icons/close.svg" alt="#" />
         </label>
         <nav class="nav">
-          <ul class="nav-list md:flex gap-10 text-sm sans-sarif text-Grayish-Dark-Blue">
+          <ul class="nav-list md:flex gap-10 text-sm sans-sarif text-grayish-dark-blue">
             <li class="nav-item"><a class="uppercase tracking-[2px]" href="#">Home</a></li>
             <li class="nav-item"><a class="uppercase tracking-[2px]" href="#">Portfolio</a></li>
             <li class="nav-item"><a class="uppercase tracking-[2px]" href="#">Contact Me</a></li>

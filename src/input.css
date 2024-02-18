@@ -41,11 +41,12 @@
   .nav {
     position: fixed;
     top: 70px;
-    right: 0;
+    right: 24px;
     z-index: 100;
     width: 0;
     display: none;
   }
+
   .nav-list {
     display: inline-block;
     width: 100%;
@@ -72,9 +73,6 @@
   }
   .nav-btn {
     z-index: 200;
-    position: fixed;
-    right: 24px;
-    top: 41px;
     cursor: pointer;
   }
   .nav-checkbox:checked + label .open {
