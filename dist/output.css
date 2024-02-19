@@ -552,6 +552,10 @@ video {
   position: relative;
 }
 
+.bottom-0 {
+  bottom: 0px;
+}
+
 .right-\[27px\] {
   right: 27px;
 }
@@ -560,9 +564,17 @@ video {
   top: 7px;
 }
 
+.right-\[35px\] {
+  right: 35px;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .mt-8 {
@@ -702,7 +714,7 @@ video {
   .nav {
     position: fixed;
     top: 70px;
-    right: 24px;
+    right: 32px;
     z-index: 100;
     width: 0;
     display: none;
@@ -750,16 +762,20 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
   .md\:mb-\[52px\] {
     margin-bottom: 52px;
   }
 
-  .md\:mt-16 {
-    margin-top: 4rem;
-  }
-
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:mt-16 {
+    margin-top: 4rem;
   }
 
   .md\:flex {

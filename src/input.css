@@ -41,7 +41,7 @@
   .nav {
     position: fixed;
     top: 70px;
-    right: 24px;
+    right: 32px;
     z-index: 100;
     width: 0;
     display: none;
