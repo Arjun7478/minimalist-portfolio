@@ -829,6 +829,16 @@ video {
   background-color: rgb(95 180 162 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-grayish-dark-blue:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 50 61 / var(--tw-bg-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 @media (min-width: 768px) {
   .md\:absolute {
     position: absolute;
