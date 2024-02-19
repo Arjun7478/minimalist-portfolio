@@ -13,7 +13,7 @@
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-inline: 24px;
+  padding-inline: 32px;
 }
 
 @media (min-width: 768px) {
@@ -29,11 +29,11 @@
   }
 }
 
-.real-nova {
+.font-real-nova {
   font-family: "Ibarra Real Nova", serif;
 }
 
-.sans-sarif {
+.font-sans-sarif {
   font-family: "Public Sans", sans-serif;
 }
 

@@ -24,7 +24,7 @@
           <img class="close hidden absolute top-[7px] right-[27px]" src="images/icons/close.svg" alt="#" />
         </label>
         <nav class="nav">
-          <ul class="nav-list md:flex gap-10 text-sm sans-sarif text-grayish-dark-blue">
+          <ul class="nav-list md:flex gap-10 text-sm font-sans-sarif text-grayish-dark-blue">
             <li class="nav-item"><a class="uppercase tracking-[2px]" href="#">Home</a></li>
             <li class="nav-item"><a class="uppercase tracking-[2px]" href="#">Portfolio</a></li>
             <li class="nav-item"><a class="uppercase tracking-[2px]" href="#">Contact Me</a></li>
@@ -32,19 +32,31 @@
         </nav>
       </header>
       <section class="Container">
-        <div>
+        <div class="relative">
           <picture>
             <source media="(min-width:768px)" srcset="images/homepage/desktop/image-homepage-hero.jpg" />
             <source media="(min-width:465px)" srcset="images/homepage/tablet/image-homepage-hero.jpg" />
             <img src="images/homepage/mobile/image-homepage-hero.jpg" alt="homepage" />
           </picture>
+
+          <div class="font-real-nova md:max-w-[445px]">
+            <h1
+              class="text-[40px] md:text-[50px] leading-[42px] md:leading-[50px] font-bold text-grayish-dark-blue tracking-[-0.36px] md:py-[50px] md:pr-[50px]"
+            >
+              Hey, I’m Alex Spencer and I love building beautiful websites
+            </h1>
+            <button class="about-btn flex items-center h-12 bg-dark-blue w-[200px] mt-8 md:mt-0">
+              <img class="p-4 bg-grayish-dark-blue" src="images/icons/down-arrows.svg" alt="down-arrows" />
+              <a href="#" class="uppercase text-sm tracking-[2px] text-white mx-auto">About Me</a>
+            </button>
+          </div>
         </div>
-        Hey, I’m Alex Spencer and I love building beautiful websites About Me About Me I’m a junior front-end developer
-        looking for a new role in an exciting company. I focus on writing accessible HTML, using modern CSS practices
-        and writing clean JavaScript. When writing JavaScript code, I mostly use React, but I can adapt to whatever
-        tools are required. I’m based in London, UK, but I’m happy working remotely and have experience in remote teams.
-        When I’m not coding, you’ll find me outdoors. I love being out in nature whether that’s going for a walk, run or
-        cycling. I’d love you to check out my work. Go to Portfolio Interested in doing a project together? Contact Me
+        About Me I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing
+        accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly
+        use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working
+        remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in
+        nature whether that’s going for a walk, run or cycling. I’d love you to check out my work. Go to Portfolio
+        Interested in doing a project together? Contact Me
       </section>
       <footer></footer>
     </main>
