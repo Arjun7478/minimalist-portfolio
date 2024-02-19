@@ -580,6 +580,10 @@ video {
   width: 0px;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .items-center {
   align-items: center;
 }
