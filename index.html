@@ -34,29 +34,61 @@
       <section class="Container">
         <div class="relative">
           <picture>
-            <source media="(min-width:768px)" srcset="images/homepage/desktop/image-homepage-hero.jpg" />
-            <source media="(min-width:465px)" srcset="images/homepage/tablet/image-homepage-hero.jpg" />
+            <source media="(min-width:768px)" srcset="images/homepage/desktop/image-homepage-hero@2x.jpg" />
+            <source media="(min-width:465px)" srcset="images/homepage/tablet/image-homepage-hero@2x.jpg" />
             <img src="images/homepage/mobile/image-homepage-hero.jpg" alt="homepage" />
           </picture>
 
-          <div class="font-real-nova md:max-w-[445px] md:absolute bottom-0 bg-very-light-grey mt-6 md:mt-0">
+          <div
+            class="font-real-nova md:max-w-[514px] lg:max-w-[445px] md:absolute bottom-0 bg-very-light-grey mt-6 md:mt-0"
+          >
             <h1
-              class="text-[40px] md:text-[50px] leading-[42px] md:leading-[50px] font-bold text-grayish-dark-blue tracking-[-0.36px] md:py-[50px] md:pr-[50px]"
+              class="text-[40px] lg:text-[50px] leading-[42px] lg:leading-[50px] font-bold text-grayish-dark-blue tracking-[-0.36px] md:py-[55px] md:pr-[55px]"
             >
               Hey, I’m Alex Spencer and I love building beautiful websites
             </h1>
-            <button class="about-btn flex items-center h-12 bg-dark-blue w-[200px] mt-8 md:mt-0">
-              <img class="p-4 bg-grayish-dark-blue" src="images/icons/down-arrows.svg" alt="down-arrows" />
+            <button
+              class="about-btn flex items-center h-12 bg-dark-blue hover:bg-slightly-desaturated-cyan w-[200px] mt-8 md:mt-0"
+            >
+              <div class="bg-grayish-dark-blue w-12 h-12 flex items-center justify-center">
+                <img src="images/icons/down-arrows.svg" alt="down-arrows" />
+              </div>
               <a href="#" class="uppercase text-sm tracking-[2px] text-white mx-auto">About Me</a>
             </button>
           </div>
         </div>
-        About Me I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing
-        accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I mostly
-        use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy working
-        remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love being out in
-        nature whether that’s going for a walk, run or cycling. I’d love you to check out my work. Go to Portfolio
-        Interested in doing a project together? Contact Me
+
+        <div class="about pt-[95px] md:pt-0 md:my-[95px] lg:my-[150px] md:flex md:gap-[70px] lg:gap-[125px]">
+          <div>
+            <picture>
+              <source media="(min-width:820px)" srcset="images/homepage/desktop/image-homepage-profile@2x.jpg" />
+              <source media="(min-width:465px)" srcset="images/homepage/tablet/image-homepage-profile@2x.jpg" />
+              <img class="lg:max-w-[540px]" src="images/homepage/mobile/image-homepage-profile@2x.jpg" alt="homepage" />
+            </picture>
+          </div>
+          <div
+            class="my-8 md:my-0 font-real-nova md:max-w-[339px] lg:max-w-[350px] text-grayish-dark-blue flex flex-col"
+          >
+            <span class="block w-full h-[1px] bg-grayish-dark-blue"></span>
+
+            <h2 class="text-[40px] leading-[42px] tracking-[-0.36px] font-bold md:mt-[50px]">About Me</h2>
+            <p class="text-base leading-[30px] mt-7">
+              I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing
+              accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I
+              mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy
+              working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love
+              being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.
+            </p>
+            <button
+              class="h-12 w-[200px] text-grayish-dark-blue border-[1px] border-grayish-dark-blue uppercase text-[12px] tracking-[2px] mt-6"
+            >
+              Go to Portfolio
+            </button>
+            <span class="block w-full h-[1px] bg-grayish-dark-blue mt-auto"></span>
+          </div>
+        </div>
+
+        <div class="my-[80px] md:my-[95px]">Interested in doing a project together? Contact Me</div>
       </section>
       <footer></footer>
     </main>
