@@ -1,51 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Manage Project</title>
-</head>
-<body>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Minimalist Portfolio</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="bg-very-light-grey">
+    <main class="main">
+      <header class="Container relative flex justify-between items-center mt-8 md:mt-16 md:mb-[52px]">
+        <a href="#"><img src="images/logo.svg" alt="#" /></a>
+        <input type="checkbox" id="navi-toggle" class="nav-checkbox hidden h-0 w-0" />
+        <label for="navi-toggle" class="nav-btn md:hidden">
+          <img class="open" src="images/icons/hamburger.svg" alt="#" />
+          <img class="close hidden absolute top-[7px] right-[35px]" src="images/icons/close.svg" alt="#" />
+        </label>
+        <nav class="nav">
+          <ul class="nav-list md:flex gap-10 text-sm font-sans-sarif text-grayish-dark-blue">
+            <li class="nav-item">
+              <a class="uppercase tracking-[2px] hover:text-slightly-desaturated-cyan" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="uppercase tracking-[2px] hover:text-slightly-desaturated-cyan" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="uppercase tracking-[2px] hover:text-slightly-desaturated-cyan" href="contact.html"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-  Home
-  Portfolio
-  Contact Me
+      <section class="Container">
+        <div>
+          <picture>
+            <source media="(min-width:820px)" srcset="images/detail/desktop/image-manage-hero@2x.jpg" />
+            <source media="(min-width:465px)" srcset="images/detail/tablet/image-manage-hero@2x.jpg" />
+            <img src="images/detail/mobile/image-manage-hero@2x.jpg" alt="homepage" />
+          </picture>
+        </div>
 
-  Manage
+        <div>
+          <div>
+            <h2>Manage</h2>
+            <p>
+              This project required me to build a fully responsive landing page to the designs provided. I used HTML5,
+              along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial
+              slider.
+            </p>
+            <div>
+              <p>Interaction Design / Front End Development</p>
+              <p>HTML / CSS / JS</p>
+              <button
+                class="h-12 w-[178px] border-[1px] border-grayish-dark-blue text-[12px] tracking-[2px] uppercase hover:bg-grayish-dark-blue hover:text-white"
+              >
+                Visit Website
+              </button>
+            </div>
+          </div>
+        </div>
 
-  This project required me to build a fully responsive landing page to the designs 
-  provided. I used HTML5, along with CSS Grid and JavaScript for the areas that 
-  required interactivity, such as the testimonial slider.
+        <div
+          class="my-[80px] md:my-[95px] font-real-nova text-grayish-dark-blue flex flex-col md:flex-row items-center justify-between"
+        >
+          <h2
+            class="w-full text-[40px] leading-[42px] tracking-[-0.36px] font-bold text-center md:text-left md:max-w-[350px]"
+          >
+            Interested in doing a project together?
+          </h2>
+          <span class="hidden md:block flex-1 h-[1px] bg-grayish-dark-blue mx-8"></span>
+          <button
+            class="w-full h-12 md:max-w-[160px] border-[1px] border-grayish-dark-blue uppercase text-[12px] tracking-[2px] hover:bg-grayish-dark-blue hover:text-white mt-10 md:mt-0 mx-auto md:mx-0"
+          >
+            Contact Me
+          </button>
+        </div>
+      </section>
 
-  Interaction Design / Front End Development
+      <footer class="bg-grayish-dark-blue">
+        <div class="Container py-14 md:py-6 md:flex items-center justify-between">
+          <div class="flex flex-col md:flex-row items-center">
+            <a href="#"><img src="images/icons/logo-white.svg" alt="#" /></a>
 
-  HTML / CSS / JS
+            <ul class="text-white flex flex-col md:flex-row md:ml-12 gap-[17px] md:gap-[42px] my-10 md:my-0">
+              <li class="text-center md:text-left">
+                <a class="text-[12px] tracking-[2px] leading-0 hover:text-slightly-desaturated-cyan" href="index.html"
+                  >HOME</a
+                >
+              </li>
+              <li class="text-center md:text-left">
+                <a
+                  class="text-[12px] tracking-[2px] leading-0 hover:text-slightly-desaturated-cyan"
+                  href="portfolio.html"
+                  >PORTFOLIO</a
+                >
+              </li>
+              <li class="text-center md:text-left">
+                <a class="text-[12px] tracking-[2px] leading-0 hover:text-slightly-desaturated-cyan" href="contact.html"
+                  >CONTACT ME</a
+                >
+              </li>
+            </ul>
+          </div>
 
-  Visit Website
-
-  Project Background
-
-  This project was a front-end  challenge from Frontend Mentor. It’s a platform that 
-  enables you to practice building websites to a design and project brief. Each challenge 
-  includes mobile and desktop designs to show how the website should look at different 
-  screen sizes. Creating these projects has helped me refine my workflow and solve 
-  real-world coding problems. I’ve learned something new with each project, helping 
-  me to improve and adapt my style.
-
-  Static Previews
-
-  Fylo
-  Previous Project
-
-  Bookmark
-  Next Project
-
-  Interested in doing a project together?
-
-  Contact Me
-
-</body>
+          <div>
+            <ul class="flex items-center gap-[15px] justify-center">
+              <li>
+                <a href="#"><img src="images/icons/github-white.svg" alt="github" /></a>
+              </li>
+              <li><a href="#"></a><img src="images/icons/twitter-white.svg" alt="twitter" /></li>
+              <li>
+                <a href="#"><img src="images/icons/linkedin-white.svg" alt="linkedin" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
 </html>
+
+<div>
+  Project Background This project was a front-end challenge from Frontend Mentor. It’s a platform that enables you to
+  practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show
+  how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and
+  solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my
+  style. Static Previews Fylo Previous Project Bookmark Next Project Interested in doing a project together? Contact Me
+</div>
