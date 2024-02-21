@@ -42,7 +42,7 @@
         </nav>
       </header>
 
-      <section class="Container">
+      <section class="Container mt-10 md:mt-[94px]">
         <div>
           <picture>
             <source media="(min-width:820px)" srcset="images/detail/desktop/image-manage-hero@2x.jpg" />
@@ -51,22 +51,55 @@
           </picture>
         </div>
 
-        <div>
-          <div>
-            <h2>Manage</h2>
-            <p>
-              This project required me to build a fully responsive landing page to the designs provided. I used HTML5,
-              along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial
-              slider.
-            </p>
+        <div class="lg:mt-[115px] mt-10 lg:flex lg:justify-between">
+          <div class="lg:max-w-[350px]">
+            <hr class="border-t-grayish-dark-blue" />
+
+            <div class="my-6 md:my-8">
+              <div class="relative">
+                <h2 class="text-[40px] leading-[42px] font-real-nova font-bold tracking-[-0.36px] grayish-dark-blue">
+                  Manage
+                </h2>
+                <p
+                  class="text-[15px] leading-[30px] grayish-dark-blue my-6 md:my-0 md:absolute lg:relative md:right-0 md:max-w-[339px] md:top-0 lg:max-w-[350px]"
+                >
+                  This project required me to build a fully responsive landing page to the designs provided. I used
+                  HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the
+                  testimonial slider.
+                </p>
+                <div class="text-slightly-desaturated-cyan lg:mt-6">
+                  <p class="text-[13px] leading-[30px]">Interaction Design / Front End Development</p>
+                  <p class="text-[13px] leading-[30px]">HTML / CSS / JS</p>
+                </div>
+                <button
+                  class="font-sans-sarif h-12 w-[178px] border-[1px] border-grayish-dark-blue text-[12px] tracking-[2px] uppercase hover:bg-grayish-dark-blue hover:text-white mt-6 lg:mt-8"
+                >
+                  Visit Website
+                </button>
+              </div>
+            </div>
+
+            <hr class="border-t-grayish-dark-blue" />
+          </div>
+
+          <div class="lg:max-w-[635px]">
             <div>
-              <p>Interaction Design / Front End Development</p>
-              <p>HTML / CSS / JS</p>
-              <button
-                class="h-12 w-[178px] border-[1px] border-grayish-dark-blue text-[12px] tracking-[2px] uppercase hover:bg-grayish-dark-blue hover:text-white"
-              >
-                Visit Website
-              </button>
+              <h2>Project Background</h2>
+              <p>
+                This project was a front-end challenge from Frontend Mentor. It’s a platform that enables you to
+                practice building websites to a design and project brief. Each challenge includes mobile and desktop
+                designs to show how the website should look at different screen sizes. Creating these projects has
+                helped me refine my workflow and solve real-world coding problems. I’ve learned something new with each
+                project, helping me to improve and adapt my style.
+              </p>
+            </div>
+            <div>
+              <h3>Static Previews</h3>
+              <picture>
+                <source media="(min-width:820px)" srcset="images/detail/desktop/image-manage-preview-2@2x.jpg" />
+                <source media="(min-width:465px)" srcset="images/detail/tablet/image-manage-preview-2@2x.jpg" />
+                <img src="images/detail/mobile/image-manage-preview-2@2x.jpg" alt="homepage" />
+              </picture>
             </div>
           </div>
         </div>
@@ -81,7 +114,7 @@
           </h2>
           <span class="hidden md:block flex-1 h-[1px] bg-grayish-dark-blue mx-8"></span>
           <button
-            class="w-full h-12 md:max-w-[160px] border-[1px] border-grayish-dark-blue uppercase text-[12px] tracking-[2px] hover:bg-grayish-dark-blue hover:text-white mt-10 md:mt-0 mx-auto md:mx-0"
+            class="font-sans-sarif w-full h-12 md:max-w-[160px] border-[1px] border-grayish-dark-blue uppercase text-[12px] tracking-[2px] hover:bg-grayish-dark-blue hover:text-white mt-10 md:mt-0 mx-auto md:mx-0"
           >
             Contact Me
           </button>
@@ -131,10 +164,4 @@
   </body>
 </html>
 
-<div>
-  Project Background This project was a front-end challenge from Frontend Mentor. It’s a platform that enables you to
-  practice building websites to a design and project brief. Each challenge includes mobile and desktop designs to show
-  how the website should look at different screen sizes. Creating these projects has helped me refine my workflow and
-  solve real-world coding problems. I’ve learned something new with each project, helping me to improve and adapt my
-  style. Static Previews Fylo Previous Project Bookmark Next Project Interested in doing a project together? Contact Me
-</div>
+<div>Fylo Previous Project Bookmark Next Project Interested in doing a project together? Contact Me</div>
