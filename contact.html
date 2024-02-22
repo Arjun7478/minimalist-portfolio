@@ -1,8 +1,127 @@
-<div>
-  Home Portfolio Contact Me Get in Touch I’d love to hear about what you’re working on and how I could help. I’m
-  currently looking for a new role and am open to a wide range of opportunities. My preference would be to find a
-  position in a company in London. But I’m also happy to hear about opportunites that don’t fit that description. I’m a
-  hard-working and positive person who will always approach each task with a sense of purpose and attention to detail.
-  Please do feel free to check out my online profiles below and get in touch using the form. Contact Me Name Jane
-  Appleseed Email Address email@example.com Message How can I help? Send Message
-</div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Minimalist Portfolio</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="bg-very-light-grey">
+    <main class="main">
+      <header class="Container relative flex justify-between items-center mt-8 md:mt-16">
+        <a href="#"><img src="images/logo.svg" alt="#" /></a>
+        <input type="checkbox" id="navi-toggle" class="nav-checkbox hidden h-0 w-0" />
+        <label for="navi-toggle" class="nav-btn md:hidden">
+          <img class="open" src="images/icons/hamburger.svg" alt="#" />
+          <img class="close hidden absolute top-[7px] right-[35px]" src="images/icons/close.svg" alt="#" />
+        </label>
+        <nav class="nav">
+          <ul class="nav-list md:flex gap-10 text-sm font-sans-sarif text-grayish-dark-blue">
+            <li class="nav-item">
+              <a class="uppercase tracking-[2px] hover:text-slightly-desaturated-cyan" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="uppercase tracking-[2px] hover:text-slightly-desaturated-cyan" href="portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="uppercase tracking-[2px] hover:text-slightly-desaturated-cyan" href="contact.html"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="Container mt-10 md:mt-[94px]">
+        <div class="text-grayish-dark-blue font-real-nova">
+          <hr class="border-t-grayish-dark-blue opacity-[0.2]" />
+          <div class="lg:flex justify-between mt-[25px] md:mt-8 mb-8 lg:mt-12 lg:mb-12">
+            <h1 class="text-[40px] leading-[42px] tracking-[-0.36px] font-bold">Get in Touch</h1>
+            <div class="max-w-[635px]">
+              <p class="font-sans-sarif text-[15px] leading-[30px] my-6 lg:my-0">
+                I’d love to hear about what you’re working on and how I could help. I’m currently looking for a new role
+                and am open to a wide range of opportunities. My preference would be to find a position in a company in
+                London. But I’m also happy to hear about opportunites that don’t fit that description. I’m a
+                hard-working and positive person who will always approach each task with a sense of purpose and
+                attention to detail. Please do feel free to check out my online profiles below and get in touch using
+                the form.
+              </p>
+              <ul class="flex items-center gap-[15px] lg:mt-6">
+                <li>
+                  <a href="#"><img src="images/icons/github.svg" alt="github" /></a>
+                </li>
+                <li><a href="#"></a><img src="images/icons/twitter.svg" alt="twitter" /></li>
+                <li>
+                  <a href="#"><img src="images/icons/linkedin.svg" alt="linkedin" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr class="border-t-grayish-dark-blue opacity-[0.2]" />
+        </div>
+
+        <div class="mt-8">
+          <h2>Contact Me</h2>
+          <form>
+            <div>
+              <p>Name</p>
+              <input type="text" />
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer class="bg-grayish-dark-blue">
+        <div class="Container py-14 md:py-6 md:flex items-center justify-between">
+          <div class="flex flex-col md:flex-row items-center">
+            <a href="#"><img src="images/icons/logo-white.svg" alt="#" /></a>
+
+            <ul class="text-white flex flex-col md:flex-row md:ml-12 gap-[17px] md:gap-[42px] my-10 md:my-0">
+              <li class="text-center md:text-left">
+                <a class="text-[12px] tracking-[2px] leading-0 hover:text-slightly-desaturated-cyan" href="index.html"
+                  >HOME</a
+                >
+              </li>
+              <li class="text-center md:text-left">
+                <a
+                  class="text-[12px] tracking-[2px] leading-0 hover:text-slightly-desaturated-cyan"
+                  href="portfolio.html"
+                  >PORTFOLIO</a
+                >
+              </li>
+              <li class="text-center md:text-left">
+                <a class="text-[12px] tracking-[2px] leading-0 hover:text-slightly-desaturated-cyan" href="contact.html"
+                  >CONTACT ME</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <ul class="flex items-center gap-[15px] justify-center">
+              <li>
+                <a href="#"><img src="images/icons/github-white.svg" alt="github" /></a>
+              </li>
+              <li><a href="#"></a><img src="images/icons/twitter-white.svg" alt="twitter" /></li>
+              <li>
+                <a href="#"><img src="images/icons/linkedin-white.svg" alt="linkedin" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
+
+<div>Jane Appleseed Email Address email@example.com Message How can I help? Send Message</div>
