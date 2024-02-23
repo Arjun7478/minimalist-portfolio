@@ -1,160 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet" />
     <title>Frontend Mentor | Minimalist Portfolio</title>
     <link rel="stylesheet" href="./dist/output.css" />
-  </head>
-  <body class="bg-very-light-grey">
+</head>
+
+<body class="bg-very-light-grey">
     <main class="main">
-      <header class="Container relative flex justify-between items-center mt-8 md:mt-16 md:mb-[52px]">
-        <a href="#"><img src="images/logo.svg" alt="#" /></a>
-        <input type="checkbox" id="navi-toggle" class="nav-checkbox hidden h-0 w-0" />
-        <label for="navi-toggle" class="nav-btn md:hidden">
-          <img class="open" src="images/icons/hamburger.svg" alt="#" />
-          <img class="close hidden absolute top-[7px] right-[35px]" src="images/icons/close.svg" alt="#" />
-        </label>
-        <nav class="nav">
-          <ul class="nav-list md:flex gap-10 text-sm font-sans-sarif text-grayish-dark-blue">
-            <li class="nav-item">
-              <a class="uppercase tracking-[2px] hover:text-slightly-desaturated-cyan" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="uppercase tracking-[2px] hover:text-slightly-desaturated-cyan" href="portfolio.html"
-                >Portfolio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="uppercase tracking-[2px] hover:text-slightly-desaturated-cyan" href="contact.html"
-                >Contact Me</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </header>
+        <header class="Container relative flex justify-between items-center mt-8 md:mt-16 md:mb-[52px]">
+            <a href="#"><img src="images/logo.svg" alt="#" /></a>
+            <input type="checkbox" id="navi-toggle" class="nav-checkbox hidden h-0 w-0" />
+            <label for="navi-toggle" class="nav-btn md:hidden">
+                <img class="open" src="images/icons/hamburger.svg" alt="#" />
+                <img class="close hidden absolute top-[7px] right-[35px]" src="images/icons/close.svg" alt="#" />
+            </label>
+            <nav class="nav">
+                <ul class="nav-list md:flex gap-10 text-sm font-sans-sarif text-grayish-dark-blue">
+                    <li class="nav-item">
+                        <a class="uppercase tracking-[2px] hover:text-slightly-desaturated-cyan"
+                            href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="uppercase tracking-[2px] hover:text-slightly-desaturated-cyan"
+                            href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="uppercase tracking-[2px] hover:text-slightly-desaturated-cyan"
+                            href="contact.html">Contact Me</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-      <section class="Container">
-        <div class="relative">
-          <picture>
-            <source media="(min-width:768px)" srcset="images/homepage/desktop/image-homepage-hero@2x.jpg" />
-            <source media="(min-width:465px)" srcset="images/homepage/tablet/image-homepage-hero@2x.jpg" />
-            <img src="images/homepage/mobile/image-homepage-hero.jpg" alt="homepage" />
-          </picture>
+        <section class="Container">
+            <div class="relative">
+                <picture>
+                    <source media="(min-width:768px)" srcset="images/homepage/desktop/image-homepage-hero@2x.jpg" />
+                    <source media="(min-width:465px)" srcset="images/homepage/tablet/image-homepage-hero@2x.jpg" />
+                    <img src="images/homepage/mobile/image-homepage-hero.jpg" alt="homepage" />
+                </picture>
 
-          <div
-            class="font-real-nova md:max-w-[514px] lg:max-w-[445px] md:absolute bottom-0 bg-very-light-grey mt-6 md:mt-0"
-          >
-            <h1
-              class="text-[40px] lg:text-[50px] leading-[42px] lg:leading-[50px] font-bold text-grayish-dark-blue tracking-[-0.36px] md:py-[55px] md:pr-[55px]"
-            >
-              Hey, I’m Alex Spencer and I love building beautiful websites
-            </h1>
-            <button
-              class="font-sans-sarif about-btn flex items-center h-12 bg-dark-blue hover:bg-slightly-desaturated-cyan w-[200px] mt-8 md:mt-0"
-            >
-              <div class="bg-grayish-dark-blue w-12 h-12 flex items-center justify-center">
-                <img src="images/icons/down-arrows.svg" alt="down-arrows" />
-              </div>
-              <a href="#" class="uppercase text-sm tracking-[2px] text-white mx-auto">About Me</a>
-            </button>
-          </div>
-        </div>
+                <div
+                    class="font-real-nova md:max-w-[514px] lg:max-w-[445px] md:absolute bottom-0 bg-very-light-grey mt-6 md:mt-0">
+                    <h1
+                        class="text-[40px] lg:text-[50px] leading-[42px] lg:leading-[50px] font-bold text-grayish-dark-blue tracking-[-0.36px] md:py-[55px] md:pr-[55px]">
+                        Hey, I’m Alex Spencer and I love building beautiful websites
+                    </h1>
+                    <button
+                        class="font-sans-sarif about-btn flex items-center h-12 bg-dark-blue hover:bg-slightly-desaturated-cyan w-[200px] mt-8 md:mt-0">
+                        <div class="bg-grayish-dark-blue w-12 h-12 flex items-center justify-center">
+                            <img src="images/icons/down-arrows.svg" alt="down-arrows" />
+                        </div>
+                        <a href="#" class="uppercase text-sm tracking-[2px] text-white mx-auto">About Me</a>
+                    </button>
+                </div>
+            </div>
 
-        <div class="about pt-[95px] md:pt-0 md:my-[95px] lg:my-[150px] md:flex md:gap-[70px] lg:gap-[125px]">
-          <div>
-            <picture>
-              <source media="(min-width:820px)" srcset="images/homepage/desktop/image-homepage-profile@2x.jpg" />
-              <source media="(min-width:465px)" srcset="images/homepage/tablet/image-homepage-profile@2x.jpg" />
-              <img class="lg:max-w-[540px]" src="images/homepage/mobile/image-homepage-profile@2x.jpg" alt="homepage" />
-            </picture>
-          </div>
-          <div
-            class="my-8 md:my-0 font-real-nova md:max-w-[339px] lg:max-w-[350px] text-grayish-dark-blue flex flex-col"
-          >
-            <span class="block w-full h-[1px] bg-grayish-dark-blue opacity-[0.2]"></span>
+            <div class="about pt-[95px] md:pt-0 md:my-[95px] lg:my-[150px] md:flex md:gap-[70px] lg:gap-[125px]">
+                <div>
+                    <picture>
+                        <source media="(min-width:820px)"
+                            srcset="images/homepage/desktop/image-homepage-profile@2x.jpg" />
+                        <source media="(min-width:465px)"
+                            srcset="images/homepage/tablet/image-homepage-profile@2x.jpg" />
+                        <img class="lg:max-w-[540px]" src="images/homepage/mobile/image-homepage-profile@2x.jpg"
+                            alt="homepage" />
+                    </picture>
+                </div>
+                <div
+                    class="my-8 md:my-0 font-real-nova md:max-w-[339px] lg:max-w-[350px] text-grayish-dark-blue flex flex-col">
+                    <span class="block w-full h-[1px] bg-grayish-dark-blue opacity-[0.2]"></span>
 
-            <h2 class="text-[40px] leading-[42px] tracking-[-0.36px] font-bold mt-8 md:mt-[50px]">About Me</h2>
-            <p class="text-base leading-[30px] mt-7 font-sans-sarif">
-              I’m a junior front-end developer looking for a new role in an exciting company. I focus on writing
-              accessible HTML, using modern CSS practices and writing clean JavaScript. When writing JavaScript code, I
-              mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but I’m happy
-              working remotely and have experience in remote teams. When I’m not coding, you’ll find me outdoors. I love
-              being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out my work.
-            </p>
-            <button
-              class="font-sans-sarif h-12 w-[200px] text-grayish-dark-blue border-[1px] border-grayish-dark-blue uppercase text-[12px] tracking-[2px] mt-6 mb-[50px] md:mb-0 hover:bg-grayish-dark-blue hover:text-white"
-            >
-              <a href="portfolio.html">Go to Portfolio</a>
-            </button>
-            <span class="block w-full h-[1px] bg-grayish-dark-blue mt-auto opacity-[0.2]"></span>
-          </div>
-        </div>
+                    <h2 class="text-[40px] leading-[42px] tracking-[-0.36px] font-bold mt-8 md:mt-[50px]">About Me</h2>
+                    <p class="text-base leading-[30px] mt-7 font-sans-sarif">
+                        I’m a junior front-end developer looking for a new role in an exciting company. I focus on
+                        writing
+                        accessible HTML, using modern CSS practices and writing clean JavaScript. When writing
+                        JavaScript code, I
+                        mostly use React, but I can adapt to whatever tools are required. I’m based in London, UK, but
+                        I’m happy
+                        working remotely and have experience in remote teams. When I’m not coding, you’ll find me
+                        outdoors. I love
+                        being out in nature whether that’s going for a walk, run or cycling. I’d love you to check out
+                        my work.
+                    </p>
+                    <button
+                        class="font-sans-sarif h-12 w-[200px] text-grayish-dark-blue border-[1px] border-grayish-dark-blue uppercase text-[12px] tracking-[2px] mt-6 mb-[50px] md:mb-0 hover:bg-grayish-dark-blue hover:text-white">
+                        <a href="portfolio.html">Go to Portfolio</a>
+                    </button>
+                    <span class="block w-full h-[1px] bg-grayish-dark-blue mt-auto opacity-[0.2]"></span>
+                </div>
+            </div>
 
-        <div
-          class="my-[80px] md:my-[95px] font-real-nova text-grayish-dark-blue flex flex-col md:flex-row items-center justify-between"
-        >
-          <h2
-            class="w-full text-[40px] leading-[42px] tracking-[-0.36px] font-bold text-center md:text-left md:max-w-[350px]"
-          >
-            Interested in doing a project together?
-          </h2>
-          <span class="hidden md:block flex-1 h-[1px] bg-grayish-dark-blue mx-8 opacity-[0.2]"></span>
-          <button
-            class="font-sans-sarif w-full h-12 md:max-w-[160px] border-[1px] border-grayish-dark-blue uppercase text-[12px] tracking-[2px] hover:bg-grayish-dark-blue hover:text-white mt-10 md:mt-0 mx-auto md:mx-0"
-          >
-            <a href="contact.html">Contact Me</a>
-          </button>
-        </div>
-      </section>
+            <div
+                class="my-[80px] md:my-[95px] font-real-nova text-grayish-dark-blue flex flex-col md:flex-row items-center justify-between">
+                <h2
+                    class="w-full text-[40px] leading-[42px] tracking-[-0.36px] font-bold text-center md:text-left md:max-w-[350px]">
+                    Interested in doing a project together?
+                </h2>
+                <span class="hidden md:block flex-1 h-[1px] bg-grayish-dark-blue mx-8 opacity-[0.2]"></span>
+                <button
+                    class="font-sans-sarif w-full h-12 md:max-w-[160px] border-[1px] border-grayish-dark-blue uppercase text-[12px] tracking-[2px] hover:bg-grayish-dark-blue hover:text-white mt-10 md:mt-0 mx-auto md:mx-0">
+                    <a href="contact.html">Contact Me</a>
+                </button>
+            </div>
+        </section>
 
-      <footer class="bg-grayish-dark-blue">
-        <div class="Container py-14 md:py-6 md:flex items-center justify-between">
-          <div class="flex flex-col md:flex-row items-center">
-            <a href="#"><img src="images/icons/logo-white.svg" alt="#" /></a>
+        <footer class="bg-grayish-dark-blue">
+            <div class="Container py-14 md:py-6 md:flex items-center justify-between">
+                <div class="flex flex-col md:flex-row items-center">
+                    <a href="#"><img src="images/icons/logo-white.svg" alt="#" /></a>
 
-            <ul class="text-white flex flex-col md:flex-row md:ml-12 gap-[17px] md:gap-[42px] my-10 md:my-0">
-              <li class="text-center md:text-left">
-                <a class="text-[12px] tracking-[2px] leading-0 hover:text-slightly-desaturated-cyan" href="index.html"
-                  >HOME</a
-                >
-              </li>
-              <li class="text-center md:text-left">
-                <a
-                  class="text-[12px] tracking-[2px] leading-0 hover:text-slightly-desaturated-cyan"
-                  href="portfolio.html"
-                  >PORTFOLIO</a
-                >
-              </li>
-              <li class="text-center md:text-left">
-                <a class="text-[12px] tracking-[2px] leading-0 hover:text-slightly-desaturated-cyan" href="contact.html"
-                  >CONTACT ME</a
-                >
-              </li>
-            </ul>
-          </div>
+                    <ul class="text-white flex flex-col md:flex-row md:ml-12 gap-[17px] md:gap-[42px] my-10 md:my-0">
+                        <li class="text-center md:text-left">
+                            <a class="text-[12px] tracking-[2px] leading-0 hover:text-slightly-desaturated-cyan"
+                                href="index.html">HOME</a>
+                        </li>
+                        <li class="text-center md:text-left">
+                            <a class="text-[12px] tracking-[2px] leading-0 hover:text-slightly-desaturated-cyan"
+                                href="portfolio.html">PORTFOLIO</a>
+                        </li>
+                        <li class="text-center md:text-left">
+                            <a class="text-[12px] tracking-[2px] leading-0 hover:text-slightly-desaturated-cyan"
+                                href="contact.html">CONTACT ME</a>
+                        </li>
+                    </ul>
+                </div>
 
-          <div>
-            <ul class="flex items-center gap-[15px] justify-center">
-              <li>
-                <a href="#"><img src="images/icons/github-white.svg" alt="github" /></a>
-              </li>
-              <li><a href="#"></a><img src="images/icons/twitter-white.svg" alt="twitter" /></li>
-              <li>
-                <a href="#"><img src="images/icons/linkedin-white.svg" alt="linkedin" /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+                <div>
+                    <ul class="flex items-center gap-[15px] justify-center">
+                        <li>
+                            <a href="#"><img src="images/icons/github-white.svg" alt="github" /></a>
+                        </li>
+                        <li><a href="#"></a><img src="images/icons/twitter-white.svg" alt="twitter" /></li>
+                        <li>
+                            <a href="#"><img src="images/icons/linkedin-white.svg" alt="linkedin" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </main>
-  </body>
+</body>
+
 </html>
