@@ -11,6 +11,8 @@
         rel="stylesheet" />
     <title>Frontend Mentor | Minimalist Portfolio</title>
     <link rel="stylesheet" href="./dist/output.css" />
+    <script defer src="script.js"></script>
+
 </head>
 
 <body class="bg-very-light-grey">
@@ -69,7 +71,7 @@
                         </ul>
                     </div>
                 </div>
-                <hr class="border-t-grayish-dark-blue opacity-[0.2]" />
+                <hr class="border-t-grayish-dark-blue opacity-[0.2] " />
             </div>
 
             <div class="mt-8 lg:mt-[47px] mb-20 md:mb-[96px] lg:mb-[109px] lg:flex justify-between">
@@ -78,7 +80,7 @@
                     <form class="font-sans-sarif">
                         <div>
                             <p class="text-[13px] leading-[30px] font-bold">Name</p>
-                            <input type="text"
+                            <input id="input-name" type="text"
                                 class="outline-none text-grayish-dark-blue bg-[#E6E6E7] px-4 h-12 w-full mt-2 text-[13px] leading-[30px]"
                                 placeholder="Jane Appleseed" />
                             <p class="hidden text-[10px] font-bold italic text-bright-red">This field is required</p>
@@ -86,13 +88,13 @@
 
                         <div class="mt-6">
                             <p class="text-[13px] leading-[30px] font-bold">Email Address</p>
-                            <input type="text"
+                            <input id="input-email" type="text"
                                 class="outline-none text-grayish-dark-blue bg-[#E6E6E7] px-4 h-12 w-full mt-2 text-[13px] leading-[30px]"
                                 placeholder="email@example.com" />
                             <p class="hidden text-[10px] font-bold italic text-bright-red">This field is required</p>
                         </div>
 
-                        <div class="mt-6">
+                        <div id="input-message" class="mt-6">
                             <p class="text-[13px] leading-[30px] font-bold">Message</p>
                             <input type="text"
                                 class="outline-none text-grayish-dark-blue bg-[#E6E6E7] pt-2 pb-[58px] px-4 w-full mt-2 text-[13px] leading-[30px]"
@@ -100,9 +102,9 @@
                             <p class="hidden text-[10px] font-bold italic text-bright-red">This field is required</p>
                         </div>
                     </form>
-                    <button
-                        class="uppercase h-12 w-[200px] bg-dark-blue text-white mt-6 hover:bg-grayish-dark-blue">Send
-                        message</button>
+                    <button class="uppercase h-12 w-[200px] bg-dark-blue text-white mt-6 hover:bg-grayish-dark-blue">
+                        Send Message
+                    </button>
                 </div>
             </div>
         </section>
