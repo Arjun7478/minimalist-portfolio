@@ -1,4 +1,5 @@
-const inputName = document.getElementById("input-name"); j
+const inputName = document.getElementById("input-name");
+const inputEmail = document.getElementById("input-email");
 
 
 const validateEmail = function (email) {
@@ -14,35 +15,36 @@ const valideName = function (name) {
 
 const checkFirstLeter = function () {
     if (this.value && this.value[0] === this.value[0].toUpperCase()) {
-        this.previousElementSibling.querySelector(".err").innerText = "";
-        this.classList.add("border-[#CFCFCF]");
+        this.nextElementSibling.innerText = "";
+        this.classList.remove("border-bright-red");
     } else {
-        this.previousElementSibling.querySelector(".err").innerText =
-            "Frist carecter must be uppercase";
-        this.classList.remove("border-[#CFCFCF]");
-        this.classList.add("border-[#CD2C2C]");
+        this.nextElementSibling.innerText = "Frist carecter must be uppercase";
+        this.classList.add("border-bright-red");
+
     }
 };
 
-if (inputName)
+if (inputName) {
     inputName.addEventListener("change", function () {
         if (valideName(inputName.value)) {
-            this.previousElementSibling.querySelector(".err").innerText = "";
+            this.nextElementSibling.innerText = "";
+            this.classList.remove("border-bright-red");
         } else {
-            this.previousElementSibling.querySelector(".err").innerText =
-                "Wrong format";
+            this.nextElementSibling.innerText = "Wrong format";
+            this.classList.add("border-bright-red");
         }
     });
-
-if (inputEmail)
+}
+if (inputEmail) {
     inputEmail.addEventListener("change", function () {
         if (validateEmail(inputEmail.value)) {
-            this.previousElementSibling.querySelector(".err").innerText = "";
+            this.nextElementSibling.innerText = "";
+            this.classList.remove("border-bright-red");
         } else {
-            this.previousElementSibling.querySelector(".err").innerText =
-                "Wrong format";
+            this.nextElementSibling.innerText = "Wrong format";
+            this.classList.add("border-bright-red");
         }
     });
+}
 
 if (inputName) inputName.addEventListener("keyup", checkFirstLeter);
-if (inputCountry) inputCountry.addEventListener("keyup", checkFirstLeter);
