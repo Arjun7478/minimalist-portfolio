@@ -17,8 +17,10 @@ const checkFirstLeter = function () {
     if (this.value && this.value[0] === this.value[0].toUpperCase()) {
         this.nextElementSibling.innerText = "";
         this.classList.remove("border-bright-red");
+        this.classList.add("border-slightly-desaturated-cyan")
     } else {
         this.nextElementSibling.innerText = "Frist carecter must be uppercase";
+        this.classList.remove("border-slightly-desaturated-cyan")
         this.classList.add("border-bright-red");
 
     }
@@ -31,6 +33,7 @@ if (inputName) {
             this.classList.remove("border-bright-red");
         } else {
             this.nextElementSibling.innerText = "Wrong format";
+            this.classList.remove("border-slightly-desaturated-cyan");
             this.classList.add("border-bright-red");
         }
     });
@@ -42,9 +45,17 @@ if (inputEmail) {
             this.classList.remove("border-bright-red");
         } else {
             this.nextElementSibling.innerText = "Wrong format";
+            this.classList.remove("border-slightly-desaturated-cyan");
             this.classList.add("border-bright-red");
         }
     });
 }
 
-if (inputName) inputName.addEventListener("keyup", checkFirstLeter);
+inputName.addEventListener("keyup", checkFirstLeter);
+inputName.addEventListener("click", function () {
+    this.classList.add("border-slightly-desaturated-cyan");
+});
+
+inputEmail.addEventListener("click", function () {
+    this.classList.add("border-slightly-desaturated-cyan");
+})
