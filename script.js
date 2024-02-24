@@ -1,5 +1,6 @@
 const inputName = document.getElementById("input-name");
 const inputEmail = document.getElementById("input-email");
+const sendMessageBtn = document.getElementById(".send-message-btn");
 
 const validateEmail = function (email) {
   // Regular expression pattern for email validation
